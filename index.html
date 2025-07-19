@@ -4,107 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome!</title>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 20px;
-    }
-    .header {
-    padding: 80px; 
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    }
-
-    .header h1 {
-    font-size: 40px;
-    }
-
-    .navbar {
-        overflow: hidden;
-        background-color: #333;
-    }
-    /* Style the navbar links */
-    .navbar a {
-        float: left;
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-    }
-
-    .navbar a.right {
-        float: right;
-    }
-
-    /* Style when hover*/
-    .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    /* Proper sizing */
-    * {
-        box-sizing: border-box;
-    }
-
-    /* Style for columns */
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* Style for side column */
-    .side {
-        flex: 30%;
-        background-color: #f1f1f1;
-        padding: 20px;
-    }
-
-    /* Style for main column */
-    .main {
-        flex: 70%;
-        background-color: #ffffff;
-        padding: 20px;
-    }
-
-    /* Responsive layout */
-    @media screen and (max-width: 700px) {
-        .row {
-            flex-direction: column;
-        }
-    }
-
-    @media screen and (max-width: 400px) {
-        .navbar a {
-            float: none;
-            width: 100%;
-        }
-    }
-
-    /* style for footer */
-    .footer {
-        padding: 10px;
-        text-align: center;
-        background: #1abc9c;
-        color: white;
-    }
-
-</style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 
 <body>
-<div class = "header">
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="/" id="navbar__logo">NEXT</a>
+        <div class="navbar__toggle" id="mobile_menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li id="navbar_item">
+                <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li id="navbar_item">
+                <a href="/tech.html" class="navbar__links">Tech</a>
+            </li>
+            <li id="navbar_item">
+                <a href="/photography.html" class="navbar__links">Photography</a>
+            </li>
+            <li id="navbar_btn">
+                <a href="/" class="button">Connect</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="hero-image">
+    <div class="hero-text">
+        <h1>Hello! This is Annie</h1>
+        <p>Welcome to my personal webpage.</p>
+        <a href="https://github.com/AnnieL5" target="_blank">Check out my Github profile</a>
+        <p>Feel free to explore and learn more about me.</p>
+    </div>
+</div>
+<!-- <div class = "header">
     <h1>Hello! This is Annie</h1>
     <p>Welcome to my personal webpage.</p>
-    <h2>So...who am I?</h2>
     <a href="https://github.com/AnnieL5" target="_blank">Check out my Github profile</a>
     <p>Feel free to explore and learn more about me.</p>
-</div>
+</div> -->
 
-<div class = "navbar">
+<nav class = "navbar2">
     <a href="#">Link</a>
     <a href="#">Link</a>
     <a href="#">Link</a>
@@ -116,10 +60,43 @@
 
     </div>
     <div class = "main">...
+        <div class = "Slideshow">
+            /* Images with caption and text" */
+            <div class = "slide fade">
+                <div class = "numbertext">1 / 3</div>
+                <img src="img1.jpg" style="width:100%">
+                <div class = "text">Caption 1</div>
+            </div>
 
+            <div class = "slide fade">
+                <div class = "numbertext">2 / 3</div>
+                <img src="img2.jpg" style="width:100%">
+                <div class = "text">Caption 2</div>
+            </div>
+
+            <div class = "slide fade">
+                <div class = "numbertext">3 / 3</div>
+                <img src="img3.jpg" style="width:100%">
+                <div class = "text">Caption 3</div>
+            </div>
+
+            <!-- Next and preview buttons -->
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <br>
+
+            <!-- Dots for navigation -->    
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
 </div>
 <div class = "footer">
     <h2>Footer</h2>
+</div>
+
 </body>
 </html>
