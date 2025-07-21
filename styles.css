@@ -1,3 +1,5 @@
+/* Old version */
+
 /* Proper sizing */
 * {
     box-sizing: border-box;
@@ -14,11 +16,18 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  /* z-index: 999; */
+}
+
+.navbar .logo {
+  width: 160px;
+  cursor: pointer;
+  margin-top: -3%;
+  margin-left: -2%;
 }
 
 .navbar__container {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   height: 80px;
   z-index: 1;
@@ -27,7 +36,7 @@
   margin: 0 auto;
   padding: 0 50px;
 }
-
+/* 
 #navbar__logo {
   background-color: tomato;
   background-image: linear-gradient(to top, #ff5227 0%, #feb47b 100%);
@@ -41,23 +50,25 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-}
-
+} */
+/* 
 .fa-gem {
   margin-right: 0.5rem;
-}
+} */
 
 .navbar__menu {
-  /* display: flex;
+  /* display: flex; */
+  display: inline-block;
+  flex-direction: row;
   align-items: center;
   list-style: none;
-  text-align: center; */
-  display: grid;
+  text-align: center;
+  /* display: grid;
   grid-template-columns: auto;
   margin:0;
   width: 100%;
   position: absolute;
-  top: -1000px;
+  top: -1000px; */
 }
 
 .navbar__item {
@@ -65,9 +76,10 @@
 }
 
 .navbar__links {
-  color: #fff;
-  display: flex;
-  align-items: center;
+  color: #000000;
+  /* display: flex; */
+  display: inline-block;
+  align-items: flex-end;
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
@@ -100,17 +112,18 @@
 .button:hover {
   background-color: #feb47b;
   transition: all 0.3s ease;
-  color: #000;
+  color: #ffffff;
 }
 
 .navbar__links:hover {
-  color: #ff5227;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
     height: 80px;
     z-index: 1;
@@ -122,6 +135,7 @@
   .navbar__menu {
     display: grid;
     grid-template-columns: auto;
+    flex-direction: row;
     margin: 0;
     width: 100%;
     position: absolute;
@@ -130,11 +144,11 @@
     transition: all 0.3s ease;
     height: 50vh;
     z-index: -1;
-    background: #131313;
+    background: #000000;
   }
 
   .navbar__menu.active {
-    background: #131313;
+    background: #ffffff;
     top: 100%;
     opacity: 1;
     transition: all 0.3s ease;
