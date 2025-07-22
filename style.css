@@ -149,9 +149,13 @@ body, html {
 .hero-text {
   font-family: 'Garbriela';
   text-align: center;
-  position: absolute;
+  position: relative;
+  margin-left: 65%;
+  margin-right: -5%;
+  /* padding-top: 35%; */
+  /* margin-top: 50%; */
   top: 50%;
-  left: 70%;
+  /* left: 70%; */
   transform: translate(-50%, -50%);
   color: #faf6ea;
 }
@@ -163,8 +167,8 @@ body, html {
 .fa {
   margin: 20px 5px auto;
   padding: 10px;
-  font-size: 30px;
-  width: 50px;
+  font-size: 40px;
+  width: 60px;
   height: 35px;
   text-align: center;
   text-decoration: none;
@@ -177,11 +181,11 @@ body, html {
 }
 
 .fa-github {
-  background:#6B5A7A
+  background:#bea0d8
 }
 
 .fa-linkedin {
-  background-color: #5a607a;
+  background-color: #9aa4cf;
 }
 /* .header {
 padding: 80px; 
