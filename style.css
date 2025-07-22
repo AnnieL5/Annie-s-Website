@@ -108,6 +108,22 @@ button:hover {
 } */
 
 
+h1 {
+  font-family: 'Garbriela';
+  font-size: 30px;
+  padding: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+p {
+  font-family: 'Garbriela';
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
 
 body, html {
     height: 100%;
@@ -133,22 +149,39 @@ body, html {
 .hero-text {
   font-family: 'Garbriela';
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 70%;
   transform: translate(-50%, -50%);
   color: #faf6ea;
 }
 
-h1 {
+.hero-text .h1{
   font-size: 50px;
-  padding: 20px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 20px;
+.fa {
+  margin: 20px 5px auto;
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background:#6B5A7A
+}
+
+.fa-linkedin {
+  background-color: #5a607a;
 }
 /* .header {
 padding: 80px; 
@@ -160,3 +193,14 @@ color: white;
 .header h1 {
 font-size: 40px;
 } 
+
+.aboutMe {
+  background-color: antiquewhite;
+  display: block;
+  justify-content: flex-start;
+}
+
+.aboutMe .p{
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+}
