@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie's Personal Projects</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Garbriela', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #272259;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background: #6b5a7a;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 0;
+        }
+
+        nav ul li a:hover {
+            color: #6b5a7a;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            margin-bottom: 1.5rem;
+            color: #272259;
+        }
+
+        .project {
+            margin-bottom: 2rem;
+        }
+
+        .project h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project p {
+            margin-bottom: 0.5rem;
+        }
+
+        .project a {
+            color: #6b5a7a;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Personal Projects</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#highlight">Highlights</a></li>
+        <li><a href="#sw">School & Work</a></li>
+        <li><a href="#other">Other Projects</a></li>
+    </ul>
+</nav>
+
+<section id="highlight">
+    <h2>Key Highlights</h2>
+    <div class="project">
+        <h3>StrideSync</h3>
+        <p>A powerfull supporting stick that helps elders in numerous ways.</p>
+        <a href="#">View Project</a>
+    </div>
+    <div class="project">
+        <h3>ThermalBuzzer</h3>
+        <p>A Thermosense to Prevent Overheated Stoves.</p>
+        <a href="#">View Project</a>
+    </div>
+</section>
+
+<section id="sw">
+    <h2>School & Work</h2>
+    <div class="project">
+        <h3>IFly</h3>
+        <p>IFLY, an unique vertical take off / landing quadcopter.</p>
+        <a href="#">View Project</a>
+    </div>
+    <div class="project">
+        <h3>PDF2MD</h3>
+        <p>The NUMBER ONE pdf to markdown conversion tool for Nokia documentations.</p>
+        <a href="#">View Project</a>
+    </div>
+    <div class="project">
+        <h3>IndiHelper</h3>
+        <p>ICS3UR summative. Help Indigenous community build their community!</p>
+        <a href="#">View Project</a>
+    </div>
+</section>
+
+<section id="other">
+    <h2>Under Development</h2>
+    <!-- <div class="project">
+        <h3>Arduino Smart Light</h3>
+        <p>An IoT project to control LED lights remotely using Arduino and sensors.</p>
+        <a href="#">View Project</a>
+    </div>
+    <div class="project">
+        <h3>Game Development</h3>
+        <p>A simple 2D game built using Unity and C#.</p>
+        <a href="#">View Project</a>
+    </div> -->
+</section>
+
+<footer>
+    &copy; 2025 My Personal Projects | Designed by Annie Liang
+</footer>
+
+</body>
+</html>
